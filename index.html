@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Picker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/54eb80a562.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+            W: "#FFFFFF",
+            Y: "#FECC02",
+            B: "#131313",
+            G: "#4E4E4E",
+            P:"#4540DB"
+            
+
+          },
+             fontFamily:{
+              Ub: [ "Supermercado One", "cursive"],
+             
+              S:["Staatliches", "sans-serif"],
+              O:[ "Anton", "sans-serif"]
+
+             }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+
+
+    <!-- header section -->
+    <header class="lg:mt-24 mt-10"> 
+         <h1 class="text-center text-3xl lg:text-6xl mt-10 font-S"><i class="text-P fa-solid fa-mobile-screen-button"></i>
+             <span class="text-P">Phone </span>Picker. 
+         </h1>
+    </header>
+
+
+    <!-- main section -->
+    
+
+
+    <main>
+       
+
+
+    <section class="flex  justify-center mt-10 lg:mt-48">
+
+        <!-- input name of phones -->
+
+        <input id="Phone-search"class=" bg-purple-100 text lg:text-xl md:text-xl rounded-md p-2 lg:w-3/12 lg:ml-4 md:ml-4" type="text" placeholder="Search phones">
+
+        <!-- Search button -->
+
+      
+        <button onclick="SearchPhones()" class="lg:text-xl hover:bg-purple-700  bg-P font-S text-white transition-all px-5 py-1 md:text-xl rounded-md  p-2 lg:ml-5 sm:ml-5 ml-1" id="Search-btn">Search</button>
+     
+
+        
+     
+    
+    </section>
+
+
+    <!-- Details section -->
+
+    <section id="Details">
+            
+    </section>
+
+
+    <section class="mt-24 p-5">
+
+        <!-- Error massage -->
+
+        <p class="text-center font-S text-P" id="Not-found">
+
+        </p>
+
+
+
+       <!-- // Search result container -->
+
+        <div id="Result-container" class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+       
+        </div>
+    </section>
+    </main>
+
+
+    <script src="Javascript\Phone.js"></script>
+</body>
+</html>
